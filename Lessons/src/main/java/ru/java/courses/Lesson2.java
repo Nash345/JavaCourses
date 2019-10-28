@@ -34,7 +34,7 @@ class Lesson2<Char> {
         char letter1 = str.charAt(0);
         char letter2 = str.charAt(6);
         char letter3 = str.charAt(10);
-        return (letter1.toUpperCase() + ". " + letter2.toUpperCase() + ". " + letter3.toUpperCase() + ".");;
+        return (str + " → " letter1.toUpperCase() + ". " + letter2.toUpperCase() + ". " + letter3.toUpperCase() + ".");;
     }
 
 }
