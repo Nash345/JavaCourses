@@ -31,9 +31,9 @@ class Lesson2<Char> {
     static String initials(String fullName) {
         String str = "Иванов Пётр Александрович";
         String[] words = str.split("\\s");
-        char letter1 = str.charAt(1);
-        char letter2 = str.charAt(7);
-        char letter3 = str.charAt(11);
+        char letter1 = str.charAt(0);
+        char letter2 = str.charAt(6);
+        char letter3 = str.charAt(10);
         return (letter1.toUpperCase() + ". " + letter2.toUpperCase() + ". " + letter3.toUpperCase() + ".");;
     }
 
