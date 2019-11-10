@@ -19,7 +19,9 @@ public class Lesson4_FlowControl {
      * @return самую длинную строку из полученного массива
      */
     public static String task1(String[] strings) {
-        return null;
+        for (int i = 0; i < strings.length; i++) {
+            return null;
+        }
     }
 
     /**
@@ -42,6 +44,30 @@ public class Lesson4_FlowControl {
      * @return целочисленный результат выполнения операции
      */
     public static int task2(int i, int k, char operation) {
-        return 0;
+        switch (operation) {
+            case '+':
+                return i + k;
+                break;
+
+            case '-':
+                return i - k;
+            break;
+
+            case '*':
+                return i * k;
+            break;
+
+            case '/':
+                return i / k;
+                if (k == 0) {
+                    return 0;
+                }
+            break;
+
+            case '%':
+                return i % k;
+            break;
+
+        }
     }
 }
