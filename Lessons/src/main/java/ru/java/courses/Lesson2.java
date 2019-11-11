@@ -11,14 +11,9 @@ class Lesson2<Char> {
      * @return возвращаем только целую часть от полученного результата,
      * хвост отбрасываем без откругления
      */
-    Scanner scn = new Scanner(System.in);
-    int x = scn.nextInt(System.in)
-        
     static int formula(int x) {
         return (int) Math.sqrt((13 * x) + (13 / x));
     }
-    
-    System.out.println("%.2f" + formula)
 
     /**
      * Нужно, привести строку с полным именем к инициалам.
@@ -33,14 +28,10 @@ class Lesson2<Char> {
      *
      * @return возвращаем инициалы в верхнем регистре разделенные точкой, как в примере выше
      */
-        
     static String initials(String fullName) {
-        String str = scn.newString(System.in);
-        String[] words = str.split("\\s");
-        char letter1 = str.charAt(0);
-        char letter2 = str.charAt(6);
-        char letter3 = str.charAt(10);
-        return (str + " → " letter1.toUpperCase() + ". " + letter2.toUpperCase() + ". " + letter3.toUpperCase() + ".");;
+        String[] parts = fullName.split(" ");
+        return (parts[0].charAt(0) + "." + parts[1].charAt(0) + "." + parts[2].charAt(0) + ".").toUpperCase();
     }
 
 }
+
