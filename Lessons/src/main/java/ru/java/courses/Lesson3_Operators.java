@@ -48,12 +48,17 @@ public class Lesson3_Operators {
      */
     public static boolean task2(int i) {
         i--;
-    if (i > 100 || i < 30) {
-        return i + 1000;
+    if (i > 100 | i < 30) {
+        return false; //no
+    } else if ((i & 2) == 0 & i > 0) {
+        return false;
     }
-    if (i > 0 && i / 2) {
-        return i - 1000;
-    }
+
+       // i += 1000;
+    //if (i > 0 && (i/2) > 0) {
+    //    return true; //no
+    //}
+       // i -= 1000;
 
     if (i < 0) {
         return false;
@@ -63,6 +68,4 @@ public class Lesson3_Operators {
     }
         return false;
     }
-
-
 }
